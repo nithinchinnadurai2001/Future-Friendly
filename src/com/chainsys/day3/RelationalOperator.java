@@ -16,9 +16,10 @@ public class RelationalOperator {
 			if(nationality.equals("Indian")) {
 				System.out.println("Enter Your State :");
 				state = sc.next();
-				if(state.equals("Karnataka") || (state.equals("Tamil Nadu")))
+				if(state.equals("Tamil Nadu") || (state.equals("Karnataka")))
+				{
 					System.out.println("User is Elegible to vote");
-				
+				}
 				else if(state.equals("Andhra")) {
 					System.out.println("No Election in Your State Now");
 				}
