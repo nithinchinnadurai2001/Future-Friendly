@@ -10,25 +10,23 @@ public class Season {
 		System.out.println("Enter Month (1 to 12) : ");
 		int month = sc.nextInt();
 		
-		if(month <= 3 && month >= 1)
+		switch(month)
 		{
+		case 1, 2, 3:
 			System.out.println("Spring Season");
-		}
-		else if(month <= 6 && month >= 4)
-		{
+		    break;
+		case 4, 5, 6:
 			System.out.println("Summer Season");
-		}
-		else if(month <= 9 && month >= 7)
-		{
-			System.out.println("Monsoon Season");
-		}
-		else if(month <= 12 && month >= 10)
-		{
+		    break;
+		case 7, 8, 9:
+	        System.out.println("Monsoon Season");
+		    break;
+		case 10, 11, 12:
 			System.out.println("Winter Season");
-		}
-		else
-			System.out.println("Invalid");
-
+		    break;
+		default:
+		    System.out.println("Enter Valid Month Number : ");
+		}    
 	}
 
 }
